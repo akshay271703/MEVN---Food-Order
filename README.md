@@ -2,21 +2,33 @@
 
 # Routes
 ### AuthRoutes
-### ProductRoutes
-
-# Controllers
-### Auth - 
 ```
 /Signup POST
 /Login  POST
 ```
-### Products - 
+
+### ProductRoutes
 ```
 /products             GET
 /products/add         POST
 /products/edit/:id    POST
 /products/delete/:id  POST
 /products/buy/:id     POST
+```
+
+# Controllers
+### Auth - 
+```
+Login  - Returns ID and email of 'EXISTING USER'
+Signup - Returns ID and email of newly created User
+```
+### Products - 
+```
+/products -> fetch all data in Product Model
+/add      -> req.body { name, id, price, quantity, imageURL } -> return new product
+/edit     -> edit and return updated product
+/delete   -> delete and return deleted product
+/buy      -> Update quantity from purchased product
 ```
 # Models
 ### User
