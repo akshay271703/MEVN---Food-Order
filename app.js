@@ -17,10 +17,10 @@ app.use(cors())
 
 // Router and Controllers
 const authRoutes    = require('./routes/authRoutes.js')
-const homeRoutes    = require('./routes/homeRoutes.js')
 const productRoutes = require('./routes/productRoute.js')
+// Check - 15/03/21 - Pass
 app.use(authRoutes)
-app.use(homeRoutes)
+// Check - 15/03/21 - Pass
 app.use(productRoutes)
 
 // Database Connection
